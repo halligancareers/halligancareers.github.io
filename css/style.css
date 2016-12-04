@@ -1,0 +1,44 @@
+body {
+    margin: 0px;
+}
+
+#navbar {
+    margin: 30px;
+}
+
+#navbar #logo {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: gray;
+    text-decoration: none;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+div.qa {
+    margin: 0px 60px 20px 60px;
+}
+
+div.q {
+
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 2px #EAEAEA;
+}
+
+div.a {
+
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+p.sig {
+    text-align: right;
+    font-family: sans-serif;
+    color: gray;
+}
