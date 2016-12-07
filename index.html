@@ -7,8 +7,23 @@
     <meta charset="UTF-8">
     <title>Halligan Careers</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/typed/blinking-cursor.css">
+
+    <script>
+        $(function(){
+            $("#typed").typed({
+                strings: ["^500 Hello ^100 world."],
+                typeSpeed: 25
+            });
+        });
+    </script> 
 
 </head>
 
@@ -16,8 +31,26 @@
 
     <div id="navbar">
         <a id="logo" href="./">
-            > Halligan Careers
+            Halligan Careers
         </a>
+        <div>
+            <a class="btn" href="guide.html">
+                Our Guide
+            </a>
+            <a class="btn" href="resume.html">
+                Résumé Feedback
+            </a>
+            <a class="btn" href="interview.html">
+                Mock Interviews
+            </a>
+            <a class="btn" href="network.html">
+                Network
+            </a>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <span id="typed"><span>
     </div>
 
 </body>

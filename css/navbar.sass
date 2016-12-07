@@ -1,0 +1,61 @@
+$nav-height:            40px
+$nav-top-padding:       20px
+$nav-side-padding:      40px
+$nav-bottom-margin:     0px
+$nav-fgcolor:           white
+$nav-bgcolor:           white
+$nav-logocolor:         black
+$nav-btncolor:          gray
+$nav-textcolor:         black
+$nav-font-size:         16px
+$nav-item-margin:       50px
+
+#navbar
+    
+    position: absolute
+    display: flex
+    justify-content: space-between
+
+    height: $nav-height
+    width: calc(100% - #{$nav-side-padding} * 2)
+    padding: $nav-top-padding $nav-side-padding
+    margin-bottom: $nav-bottom-margin
+
+    background-color: $nav-fgcolor
+    color: $nav-textcolor
+    align-items: center
+    font-size: $nav-font-size
+
+    z-index: 99
+
+    #logo
+
+        display: inline-block
+        font-family: 'Poppins', serif
+        text-decoration: none
+        text-transform: uppercase
+        letter-spacing: 2px
+        color: $nav-logocolor
+
+    div:last-child
+        margin-left: auto
+
+        a
+            font-family: sans-serif
+            font-weight: 300
+            font-size: 14px
+            letter-spacing: 1px
+            margin-right: $nav-item-margin
+            text-decoration: none
+            color: $nav-btncolor
+            cursor: pointer
+
+        a:last-child
+            margin-right: 0
+
+        a:hover
+            color: black
+
+        a.selected
+            color: black
+            font-weight: 400

@@ -1,0 +1,20 @@
+#footer {
+  position: relative;
+  height: 200px;
+  width: calc(100% - (2 * 100px));
+  background-color: #F8F8F8;
+  padding: 50px 100px;
+  font-size: 12px;
+  color: gray;
+  font-family: sans-serif;
+  display: flex; }
+
+#built-by {
+  flex: 1; }
+  #built-by p:first-child {
+    margin-bottom: 20px; }
+  #built-by p {
+    margin-top: 0px;
+    margin-bottom: 5px; }
+
+/*# sourceMappingURL=footer.css.map */
