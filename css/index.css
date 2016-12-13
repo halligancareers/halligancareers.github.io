@@ -1,5 +1,5 @@
 #navbar {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: space-between;
   height: 40px;
@@ -39,15 +39,15 @@
       padding-bottom: 5px; }
 
 #main-content {
-  height: calc(100% - 80px * 2);
+  height: 100%;
   width: calc(100% - (2 * 40px));
   position: relative;
-  padding: 160px 40px 0px 40px;
+  padding: 0px 40px 0px 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: "Lora", serif;
+  font-family: serif;
   font-size: 40px;
   letter-spacing: 1px;
   transform: translateY(-80px); }

@@ -1,22 +1,18 @@
 @import navbar
 
-$main-bgcolor:          $nav-bgcolor
-$main-side-padding:     $nav-side-padding
-$nav-ov-height:         $nav-height + $nav-top-padding * 2 + $nav-bottom-margin
-
 #main-content
 
-    height: calc(100% - #{$nav-ov-height} * 2)
+    height: 100%
     width: calc(100% - (2 * #{$main-side-padding}))
     position: relative
-    padding: ($nav-ov-height * 2) $main-side-padding 0px $main-side-padding
+    padding: 0px $main-side-padding 0px $main-side-padding
 
     display: flex
     align-items: center
     justify-content: center
 
     text-align: center
-    font-family: 'Lora', serif
+    font-family: serif
     font-size: 40px
     letter-spacing: 1px
 

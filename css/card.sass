@@ -1,0 +1,84 @@
+@import nav-vars
+
+$card-height:           500px
+
+.card-container
+    
+    height: calc(100% - #{$nav-ov-height} * 3)
+    min-height: $card-height
+    padding: $nav-ov-height 0px
+    display: flex
+    align-items: center
+
+    // transitioned from in js
+    overflow: hidden
+
+$card-top-padding:      50px
+$card-side-padding:     40px
+$header-margin-top:     40%
+$title-color:           black
+$subtitle-color:        gray
+$body-color:            gray
+$card-border:           #EAEAEA
+$card-border-hov:       #CACACA
+$card-margin:           7%
+
+a.card
+    flex: 1
+    height: calc(100% - #{2 * $card-top-padding} - 2px)
+    background-color: white
+    margin-left: $card-margin
+    border: solid 1px $card-border
+    border-radius: 10px
+    
+    font-family: serif
+    letter-spacing: 1px
+    text-decoration: none
+
+    cursor: pointer
+
+    padding: $card-top-padding $card-side-padding
+    
+    // transition from
+    margin-top: 2%
+    opacity: 0
+
+    h1 
+        display: block
+        position: relative
+        text-align: center
+        font-size: 30px
+        font-weight: 400
+        margin-top: $header-margin-top
+        margin-bottom: 0px
+        color: $title-color
+
+    h2
+        display: block
+        position: relative
+        text-align: center
+        font-family: sans-serif
+        font-size: 14px
+        font-weight: 300
+        color: $subtitle-color
+        margin-bottom: 20px       
+
+    h3
+        // display: block
+        position: relative
+        font-family: sans-serif
+        width: 100%
+        font-size: 14px
+        font-weight: 300
+        line-height: 2
+        color: $body-color
+
+a.card:hover
+    
+    border-color: $card-border-hov
+
+    h1
+        font-style: italic
+
+.card:last-child
+    margin-right: $card-margin

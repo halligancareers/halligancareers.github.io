@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400");
+@import url("https://fonts.googleapis.com/css?family=Lora");
 #navbar {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: space-between;
   height: 40px;
