@@ -1,4 +1,4 @@
-var DEBUG = true;
+var DEBUG = false;
 
 $(document).ready(function () {
     $("#resume").change(setUploadFilename);
