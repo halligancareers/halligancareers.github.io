@@ -8,9 +8,14 @@ $(document).ready(function () {
 
 function submitResume() {
 
+    $("#submit").prop("disabled", true);
+    $("#submit").html("Uploading...");
+
     errors = updateErrors();
-    if (errors)
+    if (errors) {
+        resetSubmitButton();
         return;
+    }
 
     {% if jekyll.environment == "production" %}
         var endpt = "https://halligancareers.herokuapp.com/resume";
@@ -43,6 +48,12 @@ function errorSubmitResume(error) {
             toggleError("email", true);
     else if (error.responseJSON.message == "Invalid resume-type")
         toggleError("resume", true);
+    resetSubmitButton();
+}
+
+function resetSubmitButton() {
+    $("#submit").prop("disabled", false);
+    $("#submit").html("Submit");
 }
 
 function updateErrors() {
