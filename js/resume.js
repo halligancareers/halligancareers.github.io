@@ -1,4 +1,5 @@
-var DEBUG = true;
+---
+---
 
 $(document).ready(function () {
     $("#resume").change(setUploadFilename);
@@ -11,7 +12,11 @@ function submitResume() {
     if (errors)
         return;
 
-    var endpt = DEBUG ? "http://localhost:5000/resume" : "https://halligancareers.herokuapp.com/resume";
+    {% if jekyll.environment == "production" %}
+        var endpt = "https://halligancareers.herokuapp.com/resume";
+    {% else %}
+        var endpt = "http://localhost:5000/resume";
+    {% endif %}
 
     var formData = new FormData($("#form-fields")[0]);
     formData.append("email", $("#email").val());
