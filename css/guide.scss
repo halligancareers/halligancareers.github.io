@@ -1,0 +1,17 @@
+---
+# guide
+---
+
+@import "nav-vars";
+
+.full-page {
+    height: calc(100% - #{$nav-ov-height});
+    overflow: auto;
+}
+
+.vertical-center {
+    display: flex;
+    align-items: center;
+}
+
+@import "card";

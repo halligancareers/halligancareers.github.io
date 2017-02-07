@@ -1,0 +1,15 @@
+$nav-height:            40px;
+$nav-top-padding:       20px;
+$nav-side-padding:      40px;
+$nav-bottom-margin:     0px;
+$nav-fgcolor:           white;
+$nav-bgcolor:           white;
+$nav-logocolor:         black;
+$nav-btncolor:          gray;
+$nav-textcolor:         black;
+$nav-font-size:         16px;
+$nav-item-margin:       50px;
+
+$main-bgcolor:          $nav-bgcolor;
+$main-side-padding:     $nav-side-padding;
+$nav-ov-height:         $nav-height + $nav-top-padding * 2 + $nav-bottom-margin;
